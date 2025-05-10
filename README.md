@@ -1,4 +1,4 @@
-# 🏦 GlobalTrust Bank - Landing Page
+# 🏦 Unite Bank - Landing Page
 
 This project is a responsive and modern **landing page for an online banking website**, designed to present banking services in a clear, professional, and attractive way.
 
