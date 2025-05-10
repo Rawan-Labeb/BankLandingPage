@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlobalTrust Bank - Modern Banking Solutions</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="bankLogo.jpg" alt="GlobalTrust Bank Logo" class="me-2" style="height: 40px;">
+                Unite Bank
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#accounts">Accounts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <div class="ms-3">
+                    <button class="btn btn-outline-light" id="loginBtn">Login</button>
+                    <button class="btn btn-primary" id="registerBtn">Register</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero position-relative overflow-hidden" id="home">
+        <!-- Animated background elements -->
+        <div class="hero-bg-elements">
+            <div class="circle circle-1"></div>
+            <div class="circle circle-2"></div>
+            <div class="circle circle-3"></div>
+        </div>
+        
+        <div class="container position-relative z-index-1">
+            <div class="row align-items-center min-vh-80 py-5">
+                <div class="col-lg-6 pe-lg-5">
+                    <h1 class="display-3 fw-bold mb-4 animate__animated animate__fadeInUp">Banking Made <span class="text-gradient">Simple</span> & <span class="text-gradient">Secure</span></h1>
+                    <p class="lead mb-4 fs-24 animate__animated animate__fadeInUp animate__delay-1">Experience the future of banking with our cutting-edge digital solutions. Manage your finances anytime, anywhere.</p>
+                    <div class="d-flex flex-wrap gap-3 mb-5 animate__animated animate__fadeInUp animate__delay-2">
+                        <button class="btn btn-primary btn-lg px-4 py-3 shadow-primary">
+                            <span class="d-flex align-items-center">
+                                <i class="fas fa-user-plus me-2"></i>
+                                Open an Account
+                            </span>
+                        </button>
+                        <button class="btn btn-outline-light btn-lg px-4 py-3 hover-white">
+                            <span class="d-flex align-items-center">
+                                <i class="fas fa-play-circle me-2"></i>
+                                Watch Demo
+                            </button>
+                    </div>
+                    
+                    <!-- Trust indicators -->
+                    <div class="trust-indicators animate__animated animate__fadeIn animate__delay-3">
+                        <div class="d-flex align-items-center flex-wrap gap-4">
+                            <div class="d-flex align-items-center">
+                                <div class="icon-box bg-white-10 me-3">
+                                    <i class="fas fa-shield-alt text-white"></i>
+                                </div>
+                                <span class="text-white">FDIC Insured</span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <div class="icon-box bg-white-10 me-3">
+                                    <i class="fas fa-lock text-white"></i>
+                                </div>
+                                <span class="text-white">256-bit Encryption</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-5 mt-lg-0">
+                    <div class="position-relative animate__animated animate__fadeInRight">
+                        <img src="bankLogo.jpg" alt="GlobalTrust Bank Mobile App" class="img-fluid rounded-4 shadow-xl floating-img">
+                        <div class="position-absolute top-0 start-0 w-100 h-100 bg-primary opacity-10 rounded-4"></div>
+                        
+                        <!-- App screenshot floating cards -->
+                        <div class="floating-card card-1 shadow-lg">
+                        </div>
+                        <div class="floating-card card-2 shadow-lg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats py-5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <h2 class="display-4 fw-bold">2M+</h2>
+                    <p class="lead">Customers</p>
+                </div>
+                <div class="col-md-3">
+                    <h2 class="display-4 fw-bold">$50B+</h2>
+                    <p class="lead">Assets</p>
+                </div>
+                <div class="col-md-3">
+                    <h2 class="display-4 fw-bold">150+</h2>
+                    <p class="lead">Branches</p>
+                </div>
+                <div class="col-md-3">
+                    <h2 class="display-4 fw-bold">24/7</h2>
+                    <p class="lead">Support</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features py-5 bg-light" id="features">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">Why Choose Our Bank?</h2>
+                <p class="lead text-muted">We provide innovative solutions for all your banking needs</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm feature-card">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon mb-3">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h4>Advanced Security</h4>
+                            <p class="text-muted">Multi-factor authentication and biometric login to keep your accounts safe.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm feature-card">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon mb-3">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h4>Mobile Banking</h4>
+                            <p class="text-muted">Full-featured mobile app to manage your finances on the go.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm feature-card">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon mb-3">
+                                <i class="fas fa-percentage"></i>
+                            </div>
+                            <h4>Low Rates</h4>
+                            <p class="text-muted">Competitive interest rates on loans and high yields on deposits.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm feature-card">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon mb-3">
+                                <i class="fas fa-exchange-alt"></i>
+                            </div>
+                            <h4>Instant Transfers</h4>
+                            <p class="text-muted">Send and receive money instantly with zero fees.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm feature-card">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon mb-3">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h4>Investment Tools</h4>
+                            <p class="text-muted">Comprehensive tools to grow your wealth and plan for the future.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm feature-card">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon mb-3">
+                                <i class="fas fa-headset"></i>
+                            </div>
+                            <h4>24/7 Support</h4>
+                            <p class="text-muted">Dedicated customer service available anytime you need help.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services py-5" id="services">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">Our Banking Services</h2>
+                <p class="lead text-muted">Comprehensive financial solutions tailored to your needs</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card service-card h-100 border-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Personal Banking">
+                        <div class="card-body">
+                            <h4 class="card-title">Personal Banking</h4>
+                            <p class="card-text">Checking and savings accounts, credit cards, personal loans, and more for your everyday banking needs.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check-circle text-primary me-2"></i> Free checking accounts</li>
+                                <li><i class="fas fa-check-circle text-primary me-2"></i> High-yield savings</li>
+                                <li><i class="fas fa-check-circle text-primary me-2"></i> Personalized debit cards</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card service-card h-100 border-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Business Banking">
+                        <div class="card-body">
+                            <h4 class="card-title">Business Banking</h4>
+                            <p class="card-text">Solutions designed to help businesses of all sizes manage cash flow and grow.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check-circle text-primary me-2"></i> Business checking accounts</li>
+                                <li><i class="fas fa-check-circle text-primary me-2"></i> Merchant services</li>
+                                <li><i class="fas fa-check-circle text-primary me-2"></i> Commercial loans</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card service-card h-100 border-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1535320903710-d993d3d77d29?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Wealth Management">
+                        <div class="card-body">
+                            <h4 class="card-title">Wealth Management</h4>
+                            <p class="card-text">Expert financial advice and investment solutions to help you build and preserve wealth.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check-circle text-primary me-2"></i> Retirement planning</li>
+                                <li><i class="fas fa-check-circle text-primary me-2"></i> Investment portfolios</li>
+                                <li><i class="fas fa-check-circle text-primary me-2"></i> Estate planning</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accounts Section -->
+    <section class="accounts py-5 bg-light" id="accounts">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">Account Options</h2>
+                <p class="lead text-muted">Find the perfect account for your financial goals</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="card account-card h-100 border-0 shadow-sm">
+                        <div class="card-header bg-white border-0 text-center py-4">
+                            <h4 class="my-0 fw-normal">Basic Checking</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title text-center">$0<small class="text-muted fw-light">/mo</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li><i class="fas fa-check text-primary me-2"></i> No minimum balance</li>
+                                <li><i class="fas fa-check text-primary me-2"></i> 50 free transactions/month</li>
+                                <li><i class="fas fa-check text-primary me-2"></i> Free online banking</li>
+                                <li><i class="fas fa-check text-primary me-2"></i> Mobile check deposit</li>
+                                <li><i class="fas fa-times text-muted me-2"></i> No overdraft protection</li>
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Open Account</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card account-card h-100 border-0 shadow-sm">
+                        <div class="card-header bg-white border-0 text-center py-4">
+                            <h4 class="my-0 fw-normal">Premium Checking</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title text-center">$10<small class="text-muted fw-light">/mo</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li><i class="fas fa-check text-primary me-2"></i> $1,000 minimum balance</li>
+                                <li><i class="fas fa-check text-primary me-2"></i> Unlimited transactions</li>
+                                <li><i class="fas fa-check text-primary me-2"></i> Free checks</li>
+                                <li><i class="fas fa-check text-primary me-2"></i> Overdraft protection</li>
+                                <li><i class="fas fa-check text-primary me-2"></i> 0.5% interest</li>
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-primary">Open Account</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card account-card h-100 border-0 shadow-sm">
+                        <div class="card-header bg-white border-0 text-center py-4">
+                            <h4 class="my-0 fw-normal">High-Yield Savings</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title text-center">$5<small class="text-muted fw-light">/mo</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li><i class="fas fa-check text-primary me-2"></i> 2.5% APY</li>
+                                <li><i class="fas fa-check text-primary me-2"></i> $500 minimum deposit</li>
+                                <li><i class="fas fa-check text-primary me-2"></i> 6 free withdrawals/month</li>
+                                <li><i class="fas fa-check text-primary me-2"></i> No ATM fees</li>
+                                <li><i class="fas fa-check text-primary me-2"></i> FDIC insured</li>
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-primary">Open Account</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile App Section -->
+    <section class="mobile-app py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <img src="bankLogo.jpg" alt="Mobile App" class="img-fluid rounded shadow-lg" style="height: 500px;">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="display-5 fw-bold mb-4">Bank On The Go With Our Mobile App</h2>
+                    <p class="lead mb-4">Manage your accounts, deposit checks, transfer money, pay bills, and more - all from your smartphone.</p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <button class="btn btn-dark btn-lg d-flex align-items-center">
+                            <i class="fab fa-apple fa-2x me-2"></i>
+                            <div class="text-start">
+                                <small class="d-block">Download on the</small>
+                                <span class="fw-bold">App Store</span>
+                            </div>
+                        </button>
+                        <button class="btn btn-dark btn-lg d-flex align-items-center">
+                            <i class="fab fa-google-play fa-2x me-2"></i>
+                            <div class="text-start">
+                                <small class="d-block">Get it on</small>
+                                <span class="fw-bold">Google Play</span>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials py-5 bg-light" id="testimonials">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">What Our Customers Say</h2>
+                <p class="lead text-muted">Trusted by millions of satisfied customers worldwide</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm testimonial-card">
+                        <div class="card-body p-4">
+                            <div class="mb-3">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                            <p class="card-text mb-4">"I've been with GlobalTrust for 10 years and their service keeps getting better. The mobile app is incredibly user-friendly."</p>
+                            <div class="d-flex align-items-center">
+                                <img src="https://randomuser.me/api/portraits/women/32.jpg" class="rounded-circle me-3" alt="Customer">
+                                <div>
+                                    <h6 class="mb-0">Sarah Johnson</h6>
+                                    <small class="text-muted">Small Business Owner</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm testimonial-card">
+                        <div class="card-body p-4">
+                            <div class="mb-3">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                            <p class="card-text mb-4">"The investment tools helped me grow my retirement savings significantly. Their advisors are knowledgeable and patient."</p>
+                            <div class="d-flex align-items-center">
+                                <img src="https://randomuser.me/api/portraits/men/45.jpg" class="rounded-circle me-3" alt="Customer">
+                                <div>
+                                    <h6 class="mb-0">Michael Chen</h6>
+                                    <small class="text-muted">Retired Teacher</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm testimonial-card">
+                        <div class="card-body p-4">
+                            <div class="mb-3">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star-half-alt text-warning"></i>
+                            </div>
+                            <p class="card-text mb-4">"Switching to GlobalTrust was the best financial decision I made. The instant transfers save me so much time and hassle."</p>
+                            <div class="d-flex align-items-center">
+                                <img src="https://randomuser.me/api/portraits/men/68.jpg" class="rounded-circle me-3" alt="Customer">
+                                <div>
+                                    <h6 class="mb-0">David Rodriguez</h6>
+                                    <small class="text-muted">Freelance Designer</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">Frequently Asked Questions</h2>
+                <p class="lead text-muted">Find answers to common questions about our services</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item border-0 shadow-sm mb-3">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                    How do I open an account with GlobalTrust Bank?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    You can open an account online in just a few minutes by clicking the "Open an Account" button on our website. You'll need to provide some personal information and identification documents. Alternatively, you can visit any of our branches to open an account in person.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 shadow-sm mb-3">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                    What security measures do you have in place?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We use 256-bit encryption for all online transactions, multi-factor authentication, biometric login options, and continuous fraud monitoring. Your deposits are also FDIC insured up to $250,000 per depositor.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 shadow-sm mb-3">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                    Are there fees for online banking?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    No, our online banking platform is completely free to use for all account holders. This includes bill pay, transfers, mobile check deposit, and account management features.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 shadow-sm mb-3">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                                    How quickly can I get a loan approved?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    For personal loans, you can often get instant approval online with funds deposited the same day if approved before 3pm. Mortgage and auto loans typically take 1-3 business days for approval depending on documentation.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact py-5 bg-light" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="display-5 fw-bold mb-4">Contact Us</h2>
+                    <p class="lead mb-4">Have questions or need assistance? Our team is here to help.</p>
+                    <div class="mb-4">
+                        <h5><i class="fas fa-map-marker-alt text-primary me-2"></i> Headquarters</h5>
+                        <p>123 Financial District, New York, NY 10005</p>
+                    </div>
+                    <div class="mb-4">
+                        <h5><i class="fas fa-phone-alt text-primary me-2"></i> Phone</h5>
+                        <p>1-800-GLOBALTRUST (1-800-456-2285)</p>
+                    </div>
+                    <div class="mb-4">
+                        <h5><i class="fas fa-envelope text-primary me-2"></i> Email</h5>
+                        <p>support@globaltrustbank.com</p>
+                    </div>
+                    <div class="mb-4">
+                        <h5><i class="fas fa-clock text-primary me-2"></i> Hours</h5>
+                        <p>24/7 Customer Support<br>
+                        Branch Hours: Mon-Fri 9am-5pm</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <h4 class="mb-4">Send Us a Message</h4>
+                            <form id="contactForm">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="subject" class="form-label">Subject</label>
+                                    <input type="text" class="form-control" id="subject" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 mb-4">
+                    <h5 class="mb-4"><img src="bankLogo.jpg" alt="GlobalTrust Bank Logo" class="me-2" style="height: 30px;"> Ubnite Bank</h5>
+                    <p class="text-white-70">Providing innovative financial solutions since 1985. Member FDIC. Equal Housing Lender.</p>
+                    <div class="social-icons mt-4">
+                        <a href="#" class="btn btn-sm btn-outline-light rounded-circle me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="btn btn-sm btn-outline-light rounded-circle me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="btn btn-sm btn-outline-light rounded-circle me-2"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="btn btn-sm btn-outline-light rounded-circle"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h5 class="mb-4 text-white">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white-70 hover-white">About Us</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-70 hover-white">Careers</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-70 hover-white">Blog</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-70 hover-white">Privacy Policy</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-70 hover-white">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h5 class="mb-4 text-white">Banking Services</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white-70 hover-white">Checking Accounts</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-70 hover-white">Savings Accounts</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-70 hover-white">Credit Cards</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-70 hover-white">Mortgages</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-70 hover-white">Auto Loans</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h5 class="mb-4 text-white">Newsletter</h5>
+                    <p class="text-white-70">Subscribe to get updates on new products and financial tips.</p>
+                    <form class="mb-4">
+                        <div class="input-group">
+                            <input type="email" class="form-control bg-dark border-light text-white" placeholder="Your email">
+                            <button class="btn btn-outline-light" type="button">Subscribe</button>
+                        </div>
+                    </form>
+                    <div class="app-badges">
+                        <a href="#" class="d-inline-block me-2 mb-2"></a>
+                        <a href="#" class="d-inline-block mb-2"></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4 border-light opacity-10">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="small text-white-50 mb-0">© 2023 GlobalTrust Bank. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="small mb-0">
+                        <a href="#" class="text-white-50 hover-white">Privacy Policy</a> | 
+                        <a href="#" class="text-white-50 hover-white">Terms of Use</a> | 
+                        <a href="#" class="text-white-50 hover-white">Security</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Login to Your Account</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="loginForm">
+                        <div class="mb-3">
+                            <label for="loginEmail" class="form-label">Username or Email</label>
+                            <input type="text" class="form-control" id="loginEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="loginPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="loginPassword" required>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="rememberMe">
+                            <label class="form-check-label" for="rememberMe">Remember me</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Login</button>
+                    </form>
+                    <div class="text-center mt-3">
+                        <a href="#" class="text-decoration-none">Forgot password?</a>
+                    </div>
+                    <hr>
+                    <div class="text-center">
+                        <p>Don't have an account? <a href="#" class="text-decoration-none" id="showRegisterFromLogin">Register</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Create an Account</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="registerForm">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="firstName" class="form-label">First Name</label>
+                                <input type="text" class="form-control" id="firstName" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="lastName" class="form-label">Last Name</label>
+                                <input type="text" class="form-control" id="lastName" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="registerEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="registerPassword" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="confirmPassword" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="confirmPassword" required>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="agreeTerms" required>
+                            <label class="form-check-label" for="agreeTerms">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Create Account</button>
+                    </form>
+                    <hr>
+                    <div class="text-center">
+                        <p>Already have an account? <a href="#" class="text-decoration-none" id="showLoginFromRegister">Login</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
